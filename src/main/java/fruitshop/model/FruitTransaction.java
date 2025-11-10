@@ -1,6 +1,5 @@
 package fruitshop.model;
 
-import jdk.dynalink.Operation;
 
 public class FruitTransaction {
     private Operation operation;

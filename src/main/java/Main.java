@@ -27,7 +27,7 @@ public class Main {
         ShopService shopService = new ShopService(strategy);
         shopService.processTransactions(transactions);
 
-        Storage.fruits.forEach((fruit, quantity) ->
+        Storage.getAll().forEach((fruit, quantity) ->
                 System.out.println(fruit + " : " + quantity));
     }
 }

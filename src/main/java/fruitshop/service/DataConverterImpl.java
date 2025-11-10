@@ -1,7 +1,6 @@
 package fruitshop.service;
 
 import fruitshop.model.FruitTransaction;
-
 import java.util.ArrayList;
 import java.util.List;
 

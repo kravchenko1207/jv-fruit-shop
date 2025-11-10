@@ -7,7 +7,6 @@ public class SupplyOperation implements OperationHandler {
 
     @Override
     public void apply(FruitTransaction transaction) {
-        int currentQuantity = Storage.fruits.getOrDefault(transaction.getFruit(), 0);
-        Storage.fruits.put(transaction.getFruit(), currentQuantity - transaction.getQuantity());
+        Storage.incrementQuantity(transaction.getFruit(), transaction.getQuantity());
     }
 }
